@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import LocationInput from "./components/location-input";
 import WeatherDisplay from "./components/weather-display";
 import { WeatherProvider } from "./context/WeatherContext";
@@ -5,7 +6,7 @@ import { WeatherProvider } from "./context/WeatherContext";
 export default function Home() {
   return (
     <WeatherProvider>
-      <div
+      <Box
         style={{
           display: "flex",
           flexDirection: "column",
@@ -18,7 +19,7 @@ export default function Home() {
       >
         <WeatherDisplay />
         <LocationInput />
-      </div>
+      </Box>
     </WeatherProvider>
   );
 }
